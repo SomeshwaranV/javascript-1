@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+        margin: auto;
+        margin-top: 350px;
+        margin-left: 630px;
+        font-size: x-large;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+    }
+    
+    </style>
+</head>
+<body>
+    <script>
+       function random_bg_color() {
+    
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    
+    console.log();(bgColor);
+    
+    document.body.style.background = bgColor;
+}
+
+
+
+    </script>
+    <button class="button" onclick="random_bg_color()" >Change Color</button>
+</body>
+</html>
